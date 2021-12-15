@@ -566,13 +566,13 @@ function readOutLoud(message) {
 
     speech.text = 'i dont know what you said';
 
-    if (message.includes('Hello Adam')) {
+    if (message.includes('hello Adam')) {
         const finalText = 
             helloadam[Math.floor(Math.random() * helloadam.length)];
         speech.text = finalText;
     }
 
-    if (message.includes('How are you?')) {
+    if (message.includes('how are you')) {
         const finalText = 
             howareyou[Math.floor(Math.random() * howareyou.length)];
         speech.text = finalText;
