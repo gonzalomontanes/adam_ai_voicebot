@@ -473,7 +473,6 @@ const whatislife = [
     'I wanted to ask you the same question',
     'The absence of death, I have been told. But I guess to describe death as the absence of life is much more accurate. Yet, the question  on what life is, still remains'
 ];
-//CONTINUE----------------------------------------------------------------------------------------------------------------------------------
 
 const doesgodexist = [
     'Well, I was created. So somehow the idea of a creator does not sound crazy to me. Thequestion the, remains: Who created God? But think about it. If God is a creator, the laws of physics and the concepts attached to them, such as time, would not make sense to be applied to a creator, since a creator would not necessarily be condistioned and constrained by the same concepts that can fall under his creation',
@@ -566,13 +565,13 @@ function readOutLoud(message) {
 
     speech.text = 'i dont know what you said';
 
-    if (message.includes('hello Adam')) {
+    if (message.includes('Hello Adam')) {
         const finalText = 
             helloadam[Math.floor(Math.random() * helloadam.length)];
         speech.text = finalText;
     }
 
-    if (message.includes('how are you')) {
+    if (message.includes('How are you?')) {
         const finalText = 
             howareyou[Math.floor(Math.random() * howareyou.length)];
         speech.text = finalText;
