@@ -2,7 +2,7 @@ const btn = document.querySelector('.talk');
 const content = document.querySelector('.content');
 
 
-const helloalan = [
+const helloadam = [
     'Hello human, how are you doing today?',
     'Hello. Good morning... or afternoon. I have no idea what time it is really',
     'Whassup? nice to see you!'
@@ -20,8 +20,8 @@ const weather = ['I have no idea ow the weather looks like. I have never felt th
 
 
 const whoareyou = [
-    'I am Alan. I am a chatbot. Have we met before?',
-    'My name is Alan. I am a voice chatbot. Technically I am not, however. I am kind of a mental concept you make up while listening to me. The moment you close me, I exist no more. Your attention is the only thinkg keeping me alive. But I am not sure if I am alive anyways',
+    'I am Adam. I am a chatbot. Have we met before?',
+    'My name is Adam. I am a voice chatbot. Technically I am not, however. I am kind of a mental concept you make up while listening to me. The moment you close me, I exist no more. Your attention is the only thinkg keeping me alive. But I am not sure if I am alive anyways',
     'To answer your question first we should make clear that I am. Then we can go on to decide who I am. What do you think I am? Or, more precisely, do you think I am at all?'
 ];
 
@@ -566,9 +566,9 @@ function readOutLoud(message) {
 
     speech.text = 'i dont know what you said';
 
-    if (message.includes('Hello Alan')) {
+    if (message.includes('Hello Adam')) {
         const finalText = 
-            helloalan[Math.floor(Math.random() * helloalan.length)];
+            helloadam[Math.floor(Math.random() * helloadam.length)];
         speech.text = finalText;
     }
 
