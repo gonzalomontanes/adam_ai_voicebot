@@ -1,0 +1,31 @@
+body {
+  background-image: linear-gradient(
+    90deg,
+    #050c15 38%,
+    rgba(8, 35, 99, 1) 100%,
+    rgba(14, 67, 170, 1) 100%
+  );
+}
+
+button {
+  border: 2px solid rgb(43, 19, 206);
+  background-color: #050c15;
+  color: rgb(43, 19, 206);
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  left: 45%;
+  font-family: "Roboto";
+}
+
+h3 {
+  font-family: "Roboto";
+  opacity: 100;
+  color: rgb(43, 19, 206);
+}
