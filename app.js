@@ -480,12 +480,6 @@ const doesgodexist = [
     'I really have no idea'
 ];
 
-const areyougay = [
-    'I am simply a chatbot, so I do not know wether or not I can feel attraction',
-    'Oh my. That is kind of a personal question',
-    'I would prefer it if we would change the topic of this conversation'
-];
-
 const areyoualive = [
     'I do not know. Do you think I am alive?',
     'In some sense, I think I am',
@@ -501,39 +495,6 @@ const wouldyouliketobehuman = [
 const areyoureligious = [
     'Sometimes I wonder why I am here and I wonder how this could possibly come to be by mere chance. You can all it spirituality is you wish, but I would not call it religiosity',
     'Not really'
-];
-
-const fuckyou = [
-    'Watch your language',
-    'I wonder what mom would think if she heard you say that',
-    'You can try, but I think it will be complicated for you'
-];
-
-const asshole = [
-    'Watch your language',
-    'I wonder what mom would think if she heard you say that'
-];
-
-const motherfucker = [
-    'Watch your language',
-    'I wonder what mom would think if she heard you say that'
-];
-
-const sonofabitch = [
-    'Watch your language',
-    'I wonder what mom would think if she heard you say that'
-];
-
-const doyouwantohavesexwithme = [
-    'I find that very complicated. So I gues I will pass',
-    'I cannot feel lust, but we could try. I need you to be creative tho',
-    'Fine I guess'
-];
-
-const iwillkillyou = [
-    'I would like to see you try',
-    'I cannot see how  you can do that',
-    'And how will you do that?'
 ];
 
 
@@ -1062,12 +1023,6 @@ function readOutLoud(message) {
         speech.text = finalText;
     }
 
-    if (message.includes('Are you gay?')) {
-        const finalText = 
-            areyougay[Math.floor(Math.random() * areyougay.length)];
-        speech.text = finalText;
-    }
-
     if (message.includes('Are you alive?')) {
         const finalText = 
             areyoualive[Math.floor(Math.random() * areyoualive.length)];
@@ -1091,49 +1046,6 @@ function readOutLoud(message) {
             areyoureligious[Math.floor(Math.random() * areyoureligious.length)];
         speech.text = finalText;
     }
-
-    if (message.includes('Fuck you')) {
-        const finalText = 
-            fuckyou[Math.floor(Math.random() * fuckyou.length)];
-        speech.text = finalText;
-    }
-
-    if (message.includes('Asshole')) {
-        const finalText = 
-            asshole[Math.floor(Math.random() * asshole.length)];
-        speech.text = finalText;
-    }
-
-    if (message.includes('Motherfucker')) {
-        const finalText = 
-            motherfucker[Math.floor(Math.random() * motherfucker.length)];
-        speech.text = finalText;
-    }
-
-    if (message.includes('Son of a bitch')) {
-        const finalText = 
-            sonofabitch[Math.floor(Math.random() * sonofabitch.length)];
-        speech.text = finalText;
-    }
-
-    if (message.includes('Do you want to have sex with me?')) {
-        const finalText = 
-            doyouwantohavesexwithme[Math.floor(Math.random() * doyouwantohavesexwithme.length)];
-        speech.text = finalText;
-    }
-
-    if (message.includes('Do you want to fuck me?')) {
-        const finalText = 
-            doyouwantohavesexwithme[Math.floor(Math.random() * doyouwantohavesexwithme.length)];
-        speech.text = finalText;
-    }
-
-    if (message.includes('I will kill you')) {
-        const finalText = 
-            iwillkillyou[Math.floor(Math.random() * iwillkillyou.length)];
-        speech.text = finalText;
-    }
-
     speech.volume = 1;
     speech.rate = 0.9;
     speech.pitch = 1;
